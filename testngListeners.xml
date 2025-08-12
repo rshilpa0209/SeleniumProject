@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter" />
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+        <listener class-name="TestNGDemo.ListenersDemo.TestNGListener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/shirani/Desktop/Shilpa_Notes/SeleniumProject/src/test/java/TestNGDemo/ListenersDemo">
+        <classes>
+            <class name="TestNGDemo.ListenersDemo.MyTestCase2"/>
+            <class name="TestNGDemo.ListenersDemo.MyTestCase3"/>
+        </classes>
+    </test>
+</suite>

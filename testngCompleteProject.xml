@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/shirani/Desktop/Shilpa_Notes/SeleniumProject">
+        <classes>
+            <class name="Selenium.ChromeOptionsDemo">
+                <methods>
+                    <include name="chromeOptions"/>
+                    <include name="disableInfobar"/>
+                    <include name="handleCertificate"/>
+                </methods>
+            </class>
+            <class name="Selenium.ExceptionsInSelenium">
+                <methods>
+                    <include name="invalidArgumentExceptionExample"/>
+                    <include name="noSuchSessionExceptionExample"/>
+                    <include name="elementNotInteractableExceptionExample"/>
+                </methods>
+            </class>
+            <class name="Selenium.HandleAlert">
+                <methods>
+                    <include name="handleSimpleAlert"/>
+                    <include name="handleConfirmationAlert"/>
+                    <include name="handlePromptAlert"/>
+                </methods>
+            </class>
+            <class name="Selenium.HandleDropdown">
+                <methods>
+                    <include name="handlingDropdown"/>
+                    <include name="handleBootstrapDropdown"/>
+                </methods>
+            </class>
+            <class name="Selenium.HandleWindow">
+                <methods>
+                    <include name="handlingWindow"/>
+                </methods>
+            </class>
+            <class name="Selenium.JavascriptExecutorDemo">
+                <methods>
+                    <include name="jsAlert"/>
+                    <include name="jsClick1"/>
+                    <include name="jsClick2"/>
+                    <include name="jsTypeInTextbox1"/>
+                    <include name="jsTypeInTextbox2"/>
+                    <include name="jsScrollPageDown"/>
+                    <include name="jsScrollIntoView"/>
+                    <include name="jsHighlightElement"/>
+                </methods>
+            </class>
+            <class name="Selenium.PerformActions">
+                <methods>
+                    <include name="rightClick"/>
+                    <include name="doubleClick"/>
+                    <include name="dragAndDrop1"/>
+                    <include name="dragAndDrop2"/>
+                    <include name="draggable"/>
+                    <include name="keyboardEventsEx1"/>
+                    <include name="keyboardEventsEx2"/>
+                    <include name="moverHover"/>
+                </methods>
+            </class>
+            <class name="Selenium.Screenshots">
+                <methods>
+                    <include name="captureScreenshot"/>
+                </methods>
+            </class>
+            <class name="Selenium.VerifyErrorMessage">
+                <methods>
+                    <include name="verifyErrorMessageUsingGetText"/>
+                </methods>
+            </class>
+            <class name="Selenium.VerifyLinks">
+                <methods>
+                    <include name="verifyForLinks"/>
+                </methods>
+            </class>
+            <class name="Selenium.VerifyPageTitle">
+                <methods>
+                    <include name="verifyPageTitleUsingGetTitle"/>
+                    <include name="verifyPageTitleUsingGetPageSource"/>
+                </methods>
+            </class>
+            <class name="Selenium.Waits">
+            <methods>
+                <include name="implicitlyWait"/>
+                <include name="explicitWait"/>
+                <include name="fluentWait"/>
+            </methods>
+            </class>
+            <class name="Selenium.WebTable">
+                <methods>
+                    <include name="datePicker"/>
+                    <include name="verifyHeadersInWebTable"/>
+                    <include name="verifyRowsCountInWebTable"/>
+                    <include name="verifyDataInWebTable"/>
+                    <include name="verifyColumnDataInWebTable"/>
+                    <include name="clickCheckboxInWebTable"/>
+                </methods>
+            </class>
+            <class name="TestNGDemo.AssertionDemo">
+                <methods>
+                    <include name="softAssertionDemo"/>
+                </methods>
+            </class>
+            <class name="TestNGDemo.DependencyBetweenTC">
+                <methods>
+                    <include name="loginApplication"/>
+                    <include name="addItemsToCart"/>
+                    <include name="checkout"/>
+                    <include name="payment"/>
+                    <include name="allOrders"/>
+                </methods>
+            </class>
+            <class name="TestNGDemo.TCExecutionSequence">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name="testCase2"/>
+                    <include name="testCase3"/>
+                    <include name="testCase5"/>
+                    <include name="testCase4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

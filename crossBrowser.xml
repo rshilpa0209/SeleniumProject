@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single Class Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter" />
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>
+
+    <test name="ChromeBrowser">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestNGDemo.CrossBrowserDemo" />
+        </classes>
+    </test>
+
+    <test name="IEBrowser">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="TestNGDemo.CrossBrowserDemo" />
+        </classes>
+    </test>
+
+    <test name="FirefoxBrowser">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestNGDemo.CrossBrowserDemo" />
+        </classes>
+    </test>
+
+    <test name="SafariBrowser">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="TestNGDemo.CrossBrowserDemo" />
+        </classes>
+    </test>
+</suite>
