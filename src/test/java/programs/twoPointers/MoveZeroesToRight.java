@@ -7,7 +7,7 @@ Example 2:      Input: nums = [0]               Output: [0]
 package programs.twoPointers;
 import java.util.Arrays;
 
-public class MoveZeroes {
+public class MoveZeroesToRight {
 
     public static void moveZeroes(int[] nums){
         int left = 0;
