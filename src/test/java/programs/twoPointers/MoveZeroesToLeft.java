@@ -27,7 +27,7 @@ public class MoveZeroesToLeft {
         int[] nums1 = {0,7,9,0,0,0,1,0,3,12,9,7,0};
         moveZeroes(nums1);
 
-        int[] nums2 = {0,7,9,0,0,0,1,0,3,12,9,7,0};
+        int[] nums2 = {0,1,0,3,12};
         moveZeroes(nums2);
     
 
