@@ -1,14 +1,15 @@
 /*  Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 Example 1: Input: s = "anagram", t = "nagaram" Output: true
-Example 2: Input: s = "rat", t = "car" Output: false  */
+Example 2: Input: s = "rat", t = "car" Output: false
+*/
 
 package programs.misc;
 
 public class ValidAnagram {
 
     public static char[] sortedArray(char[] arr){
-        for(int i=0; i< arr.length-1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
+        for(int i=0; i<arr.length-1; i++) {
+            for (int j=0; j<arr.length-1-i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     char temp = arr[j];
                     arr[j] = arr[j + 1];

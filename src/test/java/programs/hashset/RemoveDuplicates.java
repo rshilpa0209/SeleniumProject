@@ -1,5 +1,5 @@
 //Remove duplicates from an array
-package programs.hashmap;
+package programs.hashset;
 
 import java.util.*;
 

@@ -2,7 +2,7 @@ package javaTutorial.interfaceTutorial;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         /* Class to one Interface → ClassA implements InterfaceA
 
         InterfaceA.staticMethod();
@@ -55,6 +55,10 @@ public class Main {
         ChildClass cc = new ChildClass();
         //new ChildClass();
         cc.show();
+        //System.out.println(cc.x);
+
+//        ParentClass pc = new ChildClass();
+//        System.out.println(pc.x);
 
 
 

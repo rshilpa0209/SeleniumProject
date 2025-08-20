@@ -4,11 +4,8 @@ package Selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
-import java.security.DrbgParameters;
 import java.util.Arrays;
 
 public class ChromeOptionsDemo {
@@ -16,7 +13,7 @@ public class ChromeOptionsDemo {
     WebDriver driver;
 
     @Test(priority = 1)
-    public void chromeOptions() throws InterruptedException {
+    public void chromeOptionsdemo() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
 
         //Run Chrome in headless mode

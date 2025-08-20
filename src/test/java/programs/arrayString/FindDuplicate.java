@@ -2,7 +2,7 @@
 There is only one repeated number in nums, return this repeated number.
 Example:  Input: nums = [1,3,4,2,2]    Output: 2
 */
-package programs;
+package programs.arrayString;
 
 import java.util.HashMap;
 
@@ -21,6 +21,8 @@ public class FindDuplicate {
         }
         return -1;
     }
+
+
 
     public static void main(String[] args){
 
