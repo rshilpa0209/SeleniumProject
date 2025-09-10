@@ -30,7 +30,7 @@ public class ValidAnagram {
         }
 
         for(char c : s.toCharArray()){
-            if(mapS.get(c) != (mapT.get(c))){
+            if(!mapS.get(c).equals(mapT.get(c))){
                 return false;
             }
         }
@@ -53,29 +53,32 @@ public class ValidAnagram {
 
         for(char c : t.toCharArray()){
             if(!map.containsKey(c)){
-                map.put(c, map.get(c) -1);
                 return false;
             }
+            map.put(c, map.get(c) -1);
+            if(map.get(c) == 0){
+                map.remove(c);
+            }
         }
-        return true;
+        return map.isEmpty();
     }
 
     public static void main(String[] args) {
         String s1 = "anaGram";
         String t1 = "nagaram";
-        System.out.println(checkValidAnagram(s1, t1));
+        System.out.println(checkValidAnagram2(s1, t1));
 
         String s2 = "rat";
         String t2 = "car";
-        System.out.println(checkValidAnagram(s2, t2));
+        System.out.println(checkValidAnagram2(s2, t2));
 
         String s3 = "qwewret";
         String t3 = "ghgjj";
-        System.out.println(checkValidAnagram(s3, t3));
+        System.out.println(checkValidAnagram2(s3, t3));
 
         String s4 = "classmate";
         String t4 = "teamslacs";
-        System.out.println(checkValidAnagram(s4, t4));
+        System.out.println(checkValidAnagram2(s4, t4));
 
     }
 }
