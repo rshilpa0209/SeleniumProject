@@ -1,4 +1,4 @@
-package programs;
+package programs.arrayString;
 
 public class CountOfCharInString {
 
